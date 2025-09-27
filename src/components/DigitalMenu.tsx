@@ -259,15 +259,14 @@ const DigitalMenu: React.FC = () => {
                             {item.description}
                           </p>
                           <div className="flex items-center justify-between">
-                            <span className="text-2xl font-bold text-indigo-600">
+                            <span className="text-xl font-bold text-indigo-600 inline-flex items-center">
                               R$ {item.price.toFixed(2).replace(".", ",")}
                             </span>
                             <button
                               onClick={() => addToCart(item)}
-                              className="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition-colors duration-200 flex items-center gap-2 font-medium"
+                              className="bg-indigo-600 font-bold text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition-colors duration-200 flex items-center gap-2 font-medium"
                             >
                               <Plus className="w-4 h-4" />
-                              Adicionar
                             </button>
                           </div>
                         </div>
